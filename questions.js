@@ -113,12 +113,12 @@ let responderGenderInit = (gender) => responder.gender = gender
 
 let shareWhatsapp = () => {
     showSnakBar('Diverting to whatsapp ...')
-    window.location.href = 'https://api.whatsapp.com/send?text=http://127.0.0.1:5500/startQuestions.html?identifier=' + token
+    window.location.href = 'https://api.whatsapp.com/send?text=https://omkarajagunde.github.io/startQuestions.html?identifier=' + token
 }
 
 let shareLink = () => {
     var input = document.createElement('input');
-    input.setAttribute('value', `http://127.0.0.1:5500/startQuestions.html?identifier=${token}`);
+    input.setAttribute('value', `https://omkarajagunde.github.io/startQuestions.html?identifier=${token}`);
     document.body.appendChild(input);
     input.select();
     document.execCommand('copy');
@@ -167,7 +167,7 @@ let lineAnimation = (id) => {
 let makeQuestionURL = () => {
 
     url = new Uri()
-        .setPath('http://127.0.0.1:5500/startQuestions.html')
+        .setPath('https://omkarajagunde.github.io/startQuestions.html')
         .setQuery(`?identifier=${_uniqueID}`)
 }
 
@@ -269,7 +269,7 @@ let answerValidator = () => {
         localStorage.setItem('recentScore', score)
         responder.score = score;
         uploadResponceToFireStone()
-        window.location.replace("http://127.0.0.1:5500/responderResults.html");
+        window.location.replace("https://omkarajagunde.github.io/responderResults.html");
         return
     }
     countQuestion++;
@@ -384,7 +384,7 @@ let uploadToFireStone = () => {
         console.log("uploaded id :", _uniqueID)
         makeQuestionURL()
         localStorage.setItem("url", url)
-        window.location.replace("http://127.0.0.1:5500/shareQuestionsPage.html");
+        window.location.replace("https://omkarajagunde.github.io/shareQuestionsPage.html");
     }).catch(function(error) {
         console.error("Error adding document: ", error);
     });
