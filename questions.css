@@ -419,6 +419,7 @@ button:hover {
     }
     .container #title {
         width: 80%;
+        margin-left: -1.5%;
     }
     #takeInput {
         text-align: center;
@@ -483,6 +484,15 @@ button:hover {
         margin-top: 2px;
         padding: .4rem .6rem;
     }
+    .resultText {
+        margin-top: -40%;
+    }
+    .resultText #correctAnsText {
+        font-size: 1rem;
+    }
+    .buttons #createNewQuiz {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 340px) {
@@ -512,7 +522,9 @@ button:hover {
         padding: 0.5rem;
         grid-template-columns: 100%;
     }
-    .container #title {}
+    .container #title {
+        margin-left: -.5rem;
+    }
     .container h1 {
         font-size: 1.8rem;
     }
@@ -558,5 +570,14 @@ button:hover {
         font-size: .5rem;
         margin-top: 2px;
         padding: .4rem .6rem;
+    }
+    .resultText {
+        margin-top: -80%;
+    }
+    .resultText #correctAnsText {
+        font-size: 1rem;
+    }
+    .buttons #createNewQuiz {
+        font-size: 1rem;
     }
 }

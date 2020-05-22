@@ -22,16 +22,20 @@
         <div class="container">
 
             <div id="title">
+                <div class="resultText">
+                    <h1>Your score is</h1>
+                    <center>
+                        <h1 id="scoreText"></h1>
+                    </center>
+
+                    <h1 id="correctAnsText"></h1>
+                </div>
                 <div class="content">
                     <div id="share">
-                        <h1>Your score is</h1>
                         <div class="buttons">
-                            <center>
-                                <h1 id="scoreText"></h1>
-                                <h1 id="correctAnsText"></h1>
-                            </center>
+
                             <h5>Create your own Quiz and share it with your beLoved once <b>click button below</b></h5>
-                            <button onclick="createNewQuiz()">Create <ion-icon name="create-outline"></ion-icon> Quiz</button>
+                            <button id="createNewQuiz" onclick="createNewQuiz()">Create <ion-icon name="create-outline"></ion-icon> Quiz</button>
                         </div>
                     </div>
                 </div>
