@@ -367,7 +367,7 @@ let checkAns = (ansIndex) => {
 let setResponderResults = () => {
     let vScore = localStorage.getItem('recentScore')
     let correctAnsCount = vScore / 10;
-    if (vScore == null) {
+    if (vScore == 'null') {
         showSnakBar("You have not played any Quiz")
     }
     document.getElementById("scoreText").innerHTML = `${vScore}`
