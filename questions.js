@@ -40,38 +40,38 @@ let user = {
         },
         {
             type: 2,
-            ques: `Do USERNAME have GENDER`,
+            ques: `Do USERNAME like exotic cars like e.g. lamborgini, Porsche `,
             ans: ['Yes', 'No']
         },
         {
             type: 1,
-            ques: `Which type of movies do USERNAME like?`,
-            ans: ['suspense-thriller', 'romance', 'funny']
+            ques: `Which language movies do USERNAME like?`,
+            ans: ['Hindi', 'English']
         },
         {
             type: 1,
-            ques: `Which mobile phone USERNAME use? android or iPhone?`,
-            ans: ['android', 'iPhone', 'BlackBerry']
+            ques: `what is USERNAME's dream car brand?`,
+            ans: ['Audi', 'Tesla', 'Jaguar', 'Mercedes']
+        },
+        {
+            type: 1,
+            ques: `what's USERNAME's biggest fear ? `,
+            ans: ['Failing in something', 'Fear of height', 'Fear of water', 'Fear of cockroaches lol']
         },
         {
             type: 2,
-            ques: `Do USERNAME have GENDER`,
-            ans: ['Yes', 'No']
+            ques: `Which do you feel USERNAME is a leader or follower?`,
+            ans: ['Leader', 'Follower']
         },
         {
             type: 1,
-            ques: `Which type of movies do USERNAME like?`,
-            ans: ['suspense-thriller', 'romance', 'funny']
-        },
-        {
-            type: 1,
-            ques: `Which mobile phone USERNAME use? android or iPhone?`,
-            ans: ['android', 'iPhone', 'BlackBerry']
+            ques: `What's the most beautiful place USERNAME has been?`,
+            ans: ['Kashmir valley', 'Goa', 'Palm-Jumeriha Dubai']
         },
         {
             type: 2,
-            ques: `Do USERNAME have GENDER`,
-            ans: ['Yes', 'No']
+            ques: `How is USERNAME by nature?`,
+            ans: ['Very loving', 'Very annoying', 'sweet', 'Joyful']
         },
         {
             type: 1,
@@ -80,13 +80,13 @@ let user = {
         },
         {
             type: 1,
-            ques: `Which type of movies do USERNAME like?`,
-            ans: ['suspense-thriller', 'romance', 'funny']
+            ques: `Which is USERNAME's favorite animation cartoon?`,
+            ans: ['Bob The Builder', 'Doremon', 'Mr. Bean animated series']
         },
         {
             type: 1,
-            ques: `Which type of movies do USERNAME like?`,
-            ans: ['suspense-thriller', 'romance', 'funny']
+            ques: `Where would you like to travel with USERNAME?`,
+            ans: ['Road trip spain', 'North India', 'Goa again']
         },
     ]
 
