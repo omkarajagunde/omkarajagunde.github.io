@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+.wrapper {
+    height: 90vh;
+    width: 80vw;
+    max-width: 1100px;
+    margin: 1rem auto;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.4);
+    border-radius: .4rem;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    height: 100%;
+}
+
+.container .title {
+    width: 90%;
+    height: 20;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 9rem 0;
+    z-index: 9999;
+}
+
+.container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #F22686;
+}
+
+.container p {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(117, 104, 124);
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border-style: double;
+    stroke-width: 2px;
+    padding: .8rem 2.3rem;
+    margin: 0.1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3F3D56;
+    color: antiquewhite;
+}
+
+.clip-svg {
+    height: 100%;
+    width: 100%;
+    background: #4C305B;
+    clip-path: url(#myclip);
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.men-clip {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#otherVectors {
+    animation: suspension 2.3s ease infinite;
+}
+
+.boy-clip {
+    position: absolute;
+    bottom: 38%;
+    left: 30%;
+}
+
+#rightBoy {
+    transform-origin: bottom;
+    transform-box: view-box;
+    animation: leftRightOrigin 3s linear infinite;
+}
+
+#leftBoy {
+    transform-origin: bottom;
+    animation: rightLeftOrigin 2s ease infinite;
+}
+
+#backgroundFriends {}
+
+@keyframes leftRightOrigin {
+    100% {
+        transform: rotatez(10deg);
+    }
+    50% {
+        transform: rotatez(0deg);
+    }
+    0% {
+        transform: rotatez(10deg);
+    }
+}
+
+@keyframes rightLeftOrigin {
+    100% {
+        transform: rotatez(0deg);
+    }
+    50% {
+        transform: rotatez(6deg);
+    }
+    0% {
+        transform: rotatez(0deg);
+    }
+}
+
+@keyframes suspension {
+    100% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mobile-view {
+    position: absolute;
+    top: 0%;
+    display: none;
+    font-size: 1rem;
+    text-content: center;
+}
+
+.mobile-view img {
+    width: 100%;
+    opacity: 30%;
+}
+
+.mobile-view #bottom-img {
+    width: 100%;
+    opacity: 40%;
+    margin-top: 45%;
+}
+
+@media only screen and (max-width: 990px) {
+    .view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .container {
+        grid-template-columns: 100%;
+    }
+    .container h1 {
+        margin-top: -2rem;
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+    .container .title {
+        margin: 9rem 0;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .container {
+        margin-right: 2rem;
+        grid-template-columns: 100%;
+    }
+    .container .title {}
+    .container h1 {
+        margin-top: -20%;
+        font-size: 1.8rem;
+    }
+    .container p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .mobile-view img {
+        opacity: 20%;
+    }
+    .mobile-view #bottom-img {
+        opacity: 20%;
+    }
+    .container {
+        padding: 2rem 2rem 2rem 2rem;
+        grid-template-columns: 100%;
+    }
+    .container .title {
+        margin-top: -10%;
+    }
+    .container h1 {
+        margin: -1rem;
+        padding-right: 2rem;
+        font-size: 1.8rem;
+    }
+    .container p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+    button {
+        margin-right: 2rem;
+    }
+}
