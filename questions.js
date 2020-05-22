@@ -185,6 +185,9 @@ let questionSetter = () => {
     document.getElementById(`btn-1`).style.visibility = "hidden"
     document.getElementById(`btn-2`).style.visibility = "hidden"
     document.getElementById(`btn-3`).style.visibility = "hidden"
+    document.getElementById(`btn-4`).style.visibility = "hidden"
+    document.getElementById(`btn-5`).style.visibility = "hidden"
+    document.getElementById(`btn-6`).style.visibility = "hidden"
     document.getElementById(`ansInput`).style.visibility = "hidden"
 
     // set question titles
@@ -213,6 +216,10 @@ let questionSetter = () => {
         document.getElementById(`btn-1`).style.visibility = "hidden"
         document.getElementById(`btn-2`).style.visibility = "hidden"
         document.getElementById(`btn-3`).style.visibility = "hidden"
+
+        document.getElementById(`btn-4`).style.visibility = "hidden"
+        document.getElementById(`btn-5`).style.visibility = "hidden"
+        document.getElementById(`btn-6`).style.visibility = "hidden"
         document.getElementById(`ansInput`).style.visibility = "hidden"
         document.getElementById(`quesTitle`).style.visibility = "hidden"
         document.getElementById(`remQues`).style.visibility = "hidden"
@@ -240,6 +247,8 @@ let answerValidator = () => {
     document.getElementById(`btn-2`).style.visibility = "hidden"
     document.getElementById(`btn-3`).style.visibility = "hidden"
     document.getElementById(`btn-4`).style.visibility = "hidden"
+    document.getElementById(`btn-5`).style.visibility = "hidden"
+    document.getElementById(`btn-6`).style.visibility = "hidden"
 
     // set question titles
     document.getElementById("remQues").innerHTML = `Answer below question`
@@ -264,6 +273,8 @@ let answerValidator = () => {
         document.getElementById(`btn-2`).style.visibility = "hidden"
         document.getElementById(`btn-3`).style.visibility = "hidden"
         document.getElementById(`btn-4`).style.visibility = "hidden"
+        document.getElementById(`btn-5`).style.visibility = "hidden"
+        document.getElementById(`btn-6`).style.visibility = "hidden"
         document.getElementById(`quesTitle`).style.visibility = "hidden"
         document.getElementById(`remQues`).style.visibility = "hidden"
         localStorage.setItem('recentScore', score)

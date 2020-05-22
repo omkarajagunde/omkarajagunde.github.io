@@ -124,6 +124,14 @@ button:hover {
     visibility: hidden;
 }
 
+#btn-5 {
+    visibility: hidden;
+}
+
+#btn-6 {
+    visibility: hidden;
+}
+
 #ansInput {
     visibility: hidden;
 }
