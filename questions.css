@@ -239,10 +239,12 @@ button:hover {
     animation-duration: 1s;
 }
 
-#scoreText {
+.scoreBox {
     font-size: 3rem;
     width: 50%;
     background-color: aqua;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.4);
+    border-radius: .4rem;
 }
 
 @keyframes leftRightOrigin {
