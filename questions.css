@@ -242,6 +242,7 @@ button:hover {
 .scoreBox {
     font-size: 3rem;
     width: 50%;
+    padding: .3rem;
     background-color: aqua;
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.4);
     border-radius: .4rem;
