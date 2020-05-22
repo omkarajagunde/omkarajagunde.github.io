@@ -368,7 +368,7 @@ let setResponderResults = () => {
     let vScore = localStorage.getItem('recentScore')
     let correctAnsCount = vScore / 10;
     document.getElementById("scoreText").innerHTML = `${vScore}`
-    document.getElementById("correctAnsText").innerHTML = `you got ${correctAnsCount} / 10 right`
+    document.getElementById("correctAnsText").innerHTML = `you got ${correctAnsCount} / 10 correct`
 }
 
 let answerInit = () => {
