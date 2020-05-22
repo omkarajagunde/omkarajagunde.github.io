@@ -314,6 +314,7 @@ let addNewOption = (id, ansIndex) => {
 
 
 let gameInitialiser = () => {
+
     user.name = document.getElementById("nameInput").value;
     if (user.name == '') {
         showSnakBar("Please enter your name! ")
@@ -372,6 +373,11 @@ let setResponderResults = () => {
     }
     document.getElementById("scoreText").innerHTML = `${vScore}`
     document.getElementById("correctAnsText").innerHTML = `you got ${correctAnsCount} / 10 correct`
+}
+
+let createQuiz = () => {
+
+    window.location.replace("http://127.0.0.1:5500/questions.html")
 }
 
 let answerInit = () => {
