@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Page Title Omkar Ajagunde</title>
+    <title>KnowMeApp -Omkar Ajagunde</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="snackBar.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,19 +21,22 @@
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
 
     <div class="wrapper">
-        <div class="site-details">
-            <button id="privacyPage" onclick="privacyPageClicked()"><ion-icon name="finger-print-outline"></ion-icon></button>
-            <button id="aboutPage" onclick="aboutPageClicked()"><ion-icon name="information-circle-outline"></ion-icon></button>
-        </div>
+
         <div class="container">
+
             <div class="title">
+                <div class="site-details">
+                    <button id="aboutPage" onclick="aboutPageClicked()"><ion-icon name="information-circle-outline"></ion-icon></button>
+                </div>
                 <h1>How well your friends know you ?</h1>
                 <p>Yes, see how well your friends know you? start playing the quiz now! select 10 questions, write genuine answers to it and then simply share them with your friends and see how well they know you?
                 </p>
                 <div class="buttons">
                     <button onclick="window.location.href='./questions.html'">Start Quiz</button>
                 </div>
-
+                <center>
+                    <div id="snackbar">Trial snackBar</div>
+                </center>
             </div>
             <div class="view">
                 <div class="clip-svg">
