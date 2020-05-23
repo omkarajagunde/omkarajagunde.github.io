@@ -28,7 +28,6 @@ let user = {
 
     gender: '',
     name: '',
-    respondersCount: 1,
     responders: [0, ],
     ansArr: [],
     questionList: [
