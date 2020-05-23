@@ -196,6 +196,7 @@ let initAnsweringUser = () => {
 
     token = new Uri(localStorage.getItem('url')).getQueryParamValue('identifier')
     console.log("Token : ", token)
+    fillTable()
 
 }
 
@@ -453,4 +454,15 @@ let getFromFireStone = () => {
         console.log(user)
     });
     return
+}
+
+let fillTable = () => {
+    console.log("Filling Table")
+    let responders = firebase.database().ref("users/" + token).child('responders/')
+    responders.once('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            console.log(childSnapshot.val())
+        })
+
+    })
 }
