@@ -27,8 +27,8 @@ body {
     position: relative;
 }
 
-#progress-msg {
-    font-size: 1rem;
+#copy-btn {
+    font-size: .4rem;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
     text-align: center;

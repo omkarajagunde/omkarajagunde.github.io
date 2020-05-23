@@ -123,8 +123,7 @@ let shareWhatsapp = () => {
     document.getElementById("progress-tracker").style.width = `${100}%`
     document.getElementById('progress-msg').innerHTML = `directing to whatsapp`
     window.location.href = 'https://api.whatsapp.com/send?text=https://omkarajagunde.github.io/startQuestions.html?identifier=' + token
-    document.getElementById('progress-msg').innerHTML = `directing to whatsapp ...`
-    document.getElementById('progress-msg').style.visibility = "visible"
+
 }
 
 let shareLink = () => {
@@ -145,8 +144,7 @@ let shareLink = () => {
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input);
-    document.getElementById('progress-msg').innerHTML = `link copied`
-    document.getElementById('progress-msg').style.visibility = "visible"
+    document.getElementById("copy-btn").innerHTML = `link copied <ion-icon name="copy"></ion-icon>`
 }
 
 
