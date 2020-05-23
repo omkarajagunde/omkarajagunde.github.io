@@ -112,11 +112,30 @@ let responderGenderInit = (gender) => responder.gender = gender
 
 
 let shareWhatsapp = () => {
+    document.getElementById("progress-tracker").animate([
+        // keyframes
+        { width: '10%' },
+        { width: '100%' }
+    ], {
+        // timing options
+        duration: 300,
+    });
+    document.getElementById("progress-tracker").style.width = `${100}%`
     showSnakBar('Diverting to whatsapp ...')
     window.location.href = 'https://api.whatsapp.com/send?text=https://omkarajagunde.github.io/startQuestions.html?identifier=' + token
+
 }
 
 let shareLink = () => {
+    document.getElementById("progress-tracker").animate([
+        // keyframes
+        { width: '10%' },
+        { width: '100%' }
+    ], {
+        // timing options
+        duration: 1000,
+    });
+    document.getElementById("progress-tracker").style.width = `${100}%`
     var input = document.createElement('input');
     input.setAttribute('value', `https://omkarajagunde.github.io/startQuestions.html?identifier=${token}`);
     document.body.appendChild(input);
@@ -347,7 +366,6 @@ let showSnakBar = (message) => {
 
 let setAns = (ansIndex) => {
     user.ansArr.push(ansIndex)
-    document.activeElement.blur()
     questionSetter()
     mobileProgressBarUpdate()
 
