@@ -143,6 +143,10 @@ button:hover {
     visibility: hidden;
 }
 
+#tableView {
+    visibility: visible;
+}
+
 
 /*  Check mark hide show toggle */
 
@@ -612,7 +616,6 @@ button:hover {
 /* table CSS ***********************/
 
 .table-scroll {
-    margin-top: 2rem;
     width: 100%;
     display: block;
     /* Decoration */

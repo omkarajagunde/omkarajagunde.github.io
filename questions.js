@@ -426,7 +426,7 @@ let uploadToFireStone = () => {
         console.log("uploaded id :", _uniqueID)
         makeQuestionURL()
         localStorage.setItem("url", url)
-        window.location.replace("http://127.0.0.1:5500/shareQuestionsPage.html");
+        window.location.replace("https://omkarajagunde.github.io/shareQuestionsPage.html");
     }).catch(function(error) {
         console.error("Error adding document: ", error);
     });
