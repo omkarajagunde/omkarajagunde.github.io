@@ -103,6 +103,7 @@ var quesCounter = 0;
 var _uniqueID = ''
 var _responderID = ''
 var token = ''
+let tableElemString = ''
 
 let getname = () => user.name
 let genderInitialiser = (gender) => user.gender = gender
@@ -425,7 +426,7 @@ let uploadToFireStone = () => {
         console.log("uploaded id :", _uniqueID)
         makeQuestionURL()
         localStorage.setItem("url", url)
-        window.location.replace("https://omkarajagunde.github.io/shareQuestionsPage.html");
+        window.location.replace("http://127.0.0.1:5500/shareQuestionsPage.html");
     }).catch(function(error) {
         console.error("Error adding document: ", error);
     });
@@ -455,14 +456,33 @@ let getFromFireStone = () => {
     });
     return
 }
-
+let respondersList = []
 let fillTable = () => {
+
+
+
+    let tableDb = firebase.database();
     console.log("Filling Table")
     let responders = firebase.database().ref("users/" + token).child('responders/')
     responders.once('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
-            console.log(childSnapshot.val())
-        })
 
+
+            tableDb.ref("responderList/" + childSnapshot.val()).on('value', function(snapshot) {
+
+                if (snapshot.val() != null) {
+                    console.log(childSnapshot.val())
+                    let string = `<tr>
+                <td >${snapshot.val().name}</td>
+                <td >${snapshot.val().score}</td>
+                </tr>`
+
+                    document.getElementById('tableData').innerHTML += string
+
+                }
+            })
+        })
     })
+
+
 }

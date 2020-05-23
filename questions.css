@@ -592,9 +592,6 @@ button:hover {
         font-size: 1.5rem;
         margin-left: -.5rem;
     }
-    div.tableContainer {
-        height: 100px
-    }
     #ansInput input {
         font-size: .5rem;
         margin-top: 2px;
@@ -614,110 +611,67 @@ button:hover {
 
 /* table CSS ***********************/
 
-
-/* define height and width of scrollable area. Add 16px to width for scrollbar          */
-
-div.tableContainer {
-    clear: both;
-    border: 1px solid #963;
-    height: 280px;
-    overflow: auto;
+.table-scroll {
+    margin-top: 2rem;
     width: 100%;
-}
-
-
-/* Reset overflow value to hidden for all non-IE browsers. */
-
-html>body div.tableContainer {
-    overflow: hidden;
-    width: 100%
-}
-
-
-/* define width of table. IE browsers only                 */
-
-div.tableContainer table {
-    float: left;
-    /* width: 740px */
-}
-
-
-/* define width of table. Add 16px to width for scrollbar.           */
-
-
-/* All other non-IE browsers.                                        */
-
-html>body div.tableContainer table {
-    /* width: 756px */
-}
-
-
-/* set table header to a fixed position. WinIE 6.x only                                       */
-
-
-/* In WinIE 6.x, any element with a position property set to relative and is a child of       */
-
-
-/* an element that has an overflow property set, the relative value translates into fixed.    */
-
-
-/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
-
-thead.fixedHeader tr {
-    position: relative;
-}
-
-
-/* set THEAD element to have block level attributes. All other non-IE browsers            */
-
-
-/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
-
-
-/* make the TH elements pretty */
-
-thead.fixedHeader th {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #F22686;
-    text-align: left;
-}
-
-html>body tbody.scrollContent {
     display: block;
-    height: 262px;
-    overflow: auto;
-    width: 100%
+    /* Decoration */
+    border-spacing: 0;
+    height: 100%;
 }
 
-html>body thead.fixedHeader {
-    display: table;
-    overflow: auto;
-    width: 100%
+.table-scroll thead {
+    background-color: #f1f1f1;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow-y: scroll;
 }
 
+.table-scroll tbody {
+    /* Position */
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* Decoration */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
 
-/* make TD elements pretty. Provide alternating classes for striping the table */
+.table-scroll tr {
+    width: 100%;
+    display: flex;
+}
 
-
-/* http://www.alistapart.com/articles/zebratables/                             */
-
-tbody.scrollContent td,
-tbody.scrollContent tr.normalRow td {
-    background: #FFF;
-    border-bottom: none;
+.table-scroll td,
+.table-scroll th {
+    flex-basis: 100%;
+    flex-grow: 2;
+    display: block;
+    padding: .5rem;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    border-left: none;
-    border-right: 1px solid #CCC;
-    border-top: 1px solid #DDD;
-    padding: 2px 3px 3px 4px
+    color: rgb(117, 104, 124);
 }
 
-tbody.scrollContent tr.alternateRow td {
-    background: #3F3D56;
-    border-bottom: none;
-    border-left: none;
-    border-right: 1px solid #CCC;
-    border-top: 1px solid #DDD;
-    padding: 2px 3px 3px 4px
+
+/* Other options */
+
+.table-scroll.small-first-col td:first-child,
+.table-scroll.small-first-col th:first-child {
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.table-scroll tbody tr:nth-child(2n) {
+    background-color: rgba(130, 130, 170, 0.1);
+}
+
+.body-half-screen {
+    max-height: 50vh;
+}
+
+.small-col {
+    flex-basis: 10%;
 }
