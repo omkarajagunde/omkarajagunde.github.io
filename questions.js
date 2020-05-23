@@ -325,7 +325,7 @@ let addNewOption = (id, ansIndex) => {
         showSnakBar('enter your answer please!')
     } else {
         user.questionList[countQuestion - 1].ans.push(option)
-        user.ansArr.push(ansIndex)
+        user.ansArr.push(user.questionList[countQuestion - 1].ans.length)
         questionSetter()
         document.getElementById(id).value = ''
         mobileProgressBarUpdate()
