@@ -347,7 +347,7 @@ let showSnakBar = (message) => {
 
 let setAns = (ansIndex) => {
     user.ansArr.push(ansIndex)
-
+    document.activeElement.blur()
     questionSetter()
     mobileProgressBarUpdate()
 
