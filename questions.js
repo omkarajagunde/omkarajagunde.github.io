@@ -121,16 +121,19 @@ let shareWhatsapp = () => {
         duration: 300,
     });
     document.getElementById("progress-tracker").style.width = `${100}%`
-    showSnakBar('Diverting to whatsapp ...')
+    document.getElementById('progress-msg').innerHTML = `directing to whatsapp`
     window.location.href = 'https://api.whatsapp.com/send?text=https://omkarajagunde.github.io/startQuestions.html?identifier=' + token
-
+    document.getElementById('progress-msg').innerHTML = `directing to whatsapp ...`
+    document.getElementById('progress-msg').style.visibility = "visible"
 }
 
 let shareLink = () => {
     document.getElementById("progress-tracker").animate([
         // keyframes
         { width: '10%' },
-        { width: '100%' }
+        {
+            width: '100%',
+        }
     ], {
         // timing options
         duration: 1000,
@@ -142,7 +145,8 @@ let shareLink = () => {
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input);
-    showSnakBar('link copied ...')
+    document.getElementById('progress-msg').innerHTML = `link copied`
+    document.getElementById('progress-msg').style.visibility = "visible"
 }
 
 
