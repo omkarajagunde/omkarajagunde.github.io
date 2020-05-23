@@ -486,3 +486,6 @@ let fillTable = () => {
 
 
 }
+
+let privacyPageClicked = () => showSnakBar('privacy page coming soon ...')
+let aboutPageClicked = () => showSnakBar('about page coming soon ...')
