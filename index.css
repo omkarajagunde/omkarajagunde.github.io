@@ -74,6 +74,17 @@ button:hover {
     margin-left: 5%;
 }
 
+.site-details button {
+    font-size: 2rem;
+    padding: 0;
+    bottom: 0;
+}
+
+.site-details button:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
 #otherVectors {
     animation: suspension 2.3s ease infinite;
 }
