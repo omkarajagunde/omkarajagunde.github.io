@@ -121,9 +121,9 @@ let shareWhatsapp = () => {
         duration: 300,
     });
     document.getElementById("progress-tracker").style.width = `${100}%`
-    document.getElementById('progress-msg').innerHTML = `directing to whatsapp`
     window.location.href = 'https://api.whatsapp.com/send?text=https://omkarajagunde.github.io/startQuestions.html?identifier=' + token
 
+    
 }
 
 let shareLink = () => {
