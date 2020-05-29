@@ -13,6 +13,7 @@
   gtag('config', 'UA-112075015-6');
     let USER_ID = localStorage.getItems('id')
     gtag('set', {'user_id': `${USER_ID}`}); // Set the user ID using signed-in user_id.
+    ga('set', 'userId', `${USER_ID}`); // Set the user ID using signed-in user_id.
 </script>
 
     <!-- Google Tag Manager -->
